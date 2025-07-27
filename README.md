@@ -6,6 +6,7 @@ An alarm clock program but instead of using **JS** as backend I done it with **C
 - Xampp for Apache
 - GCC compiler to compile your C code
 - VS code for wroting the code
+- A .WAV format audio for the alarm
 - Chatgpt to Clarify your doubts
 
 | Purpose | Languages used |
