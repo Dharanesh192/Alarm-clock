@@ -9,7 +9,7 @@
 int main()
 {
     char alarm_times[MAX_ALARMS][6]; // HH:MM format
-    int alarm_count = 0;//count of alarms
+    int alarm_count = 0;//Alarm count
 
     FILE *file = fopen("Text.txt", "r");
     if (file != NULL)//check the file is opening or not
