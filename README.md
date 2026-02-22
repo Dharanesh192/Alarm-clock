@@ -1,6 +1,6 @@
 ## ⏰ Basic alarm clock
 
-An alarm clock program but instead of using **JS** as backend I done it with **C** programming. It is task given for me to creat a code that use **C programming** ,so I struggle a lot at first so I tell you how finish this task in this **README**.
+An alarm clock program but instead of using **Python and JS** as backend I done it with **C** programming. It is a task given for me to creat a code that use **C programming** ,so I struggle a lot at first so decide to tell how I finish this project. In this **Readme** file
 
 ## 🧾 Requirements 
 - Xampp for Apache
@@ -15,10 +15,9 @@ An alarm clock program but instead of using **JS** as backend I done it with **C
 
 
 ## 🎯 Steps to check
-- ✅️ Your `Xampp folder` should be in C disk
+- ✅️ Your `Xampp folder` must be in `C disk`
 - ✅️ Alarm sound should be in `same folder` and in `.WAV` format
 - ✅️ When you upload the code in your system `change the file path in the code to your file path`
-- ✅️ Change the file names to your file name
 - ✅️ Install the required extension in VS code
 - ✅️ Put your program folder to the `htdocs folder in Xampp folder`
 - ✅️ The compiled c program to the `cgi-bin folder in Xampp folder`
@@ -31,7 +30,16 @@ An alarm clock program but instead of using **JS** as backend I done it with **C
 - Click the PHP file it should open without any issues in that set your alarm time.
 - When you press the **set button** the PHP program take that alarm time and stored it in the `text file` and call the **compiled C**.
 - Then the C program will check the `current time` with the `alarm time` if it match it trigger's the alarm sound.
-- You can set multiple alarms. You can delete alarm by pressing the **Clear button** it will clear the last alarm time you set and reset the compiled c program to check it again. 
+- You can set multiple alarms. You can delete alarm by pressing the **Clear button** it will clear the last alarm time you set and reset the compiled c program to check it again.
+
+## 🚫 Technical Limitation
+
+- C is a system-level language so that's why it can't run inside the browser environment
+- Therefore, it cannot directly access or modify HTML or CSS elements at runtime
+- So that's why I use the **JS** to update the analog clock in real time
+- `HTML` can access the compiled `C` code directly. So that's leads to using `PHP`
+
+JavaScript is used for dynamic UI updates such as the analog clock because it runs inside the browser and can manipulate the DOM and CSS.
 
 ## ⚠️ Errors may occurs 
 - Struggle to start the apache
