@@ -36,10 +36,9 @@ An alarm clock program but instead of using **Python and JS** as backend I done 
 
 - C is a system-level language so that's why it can't run inside the browser environment
 - Therefore, it cannot directly access or modify HTML or CSS elements at runtime
-- So that's why I use the **JS** to update the analog clock in real time
-- `HTML` can access the compiled `C` code directly. So that's leads to using `PHP`
-
-JavaScript is used for dynamic UI updates such as the analog clock because it runs inside the browser and can manipulate the DOM and CSS.
+- `JavaScript` is used for dynamic UI updates such as the analog clock because it runs inside the browser and can manipulate the HTML and CSS.
+- `HTML` can't access the compiled `C` code directly
+- So that's leads to the use of `PHP` code, iy is similar to `HTML`
 
 ## ⚠️ Errors may occurs 
 - Struggle to start the apache
@@ -50,7 +49,3 @@ JavaScript is used for dynamic UI updates such as the analog clock because it ru
 - Run the Xampp as administrator then **uncheck the apache to unintall and reinstall it again** or get help from youtube.
 - Check the audio file is in the **.WAV format** if not convert it in any website.
 - The `third error` is occurs because of the `PHP program is waiting for the compiled c program to call`, So it make the `PHP file` to load for too long and not display the text. To prevent this **you can give the actual path of the compiled c program to the PHP code** it may solve the error.
-
-## 🤔 Why I use PHP and JS 
-- The **HTMl can't call the c program during the runtime but PHP can call the compiled c** in the runtime and PHP is so similar to HTMl
-- I use the JS for the analog clock because unlike JS, **C can't change the CSS values in runtime**
